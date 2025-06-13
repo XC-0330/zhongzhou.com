@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>中州灵网</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>中州灵网</h1>
+      <p id="daily-poem">加载中...</p>
+      <p id="daily-weather">加载中...</p>
+      <p id="daily-news">加载中...</p>
+    </header>
+
+    <section id="search-section">
+      <input type="text" id="search-input" placeholder="请输入人物名..." />
+      <button onclick="searchCharacter()">搜索</button>
+      <div id="character-info"></div>
+    </section>
+
+    <section id="leaderboards">
+      <div class="board">
+        <h2>青云榜</h2>
+        <ul id="qingyun-list"></ul>
+      </div>
+      <div class="board">
+        <h2>重霄榜</h2>
+        <ul id="chongxiao-list"></ul>
+      </div>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
